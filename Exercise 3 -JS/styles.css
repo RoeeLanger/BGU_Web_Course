@@ -1,0 +1,107 @@
+:root {
+    --deep: #10281a;
+    --leaf: #1c3d29;
+    --moss: #2f5d3e;
+    --lime: #8fd694;
+    --cream: #f3f0e4;
+    --muted: #b9c9ba;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    background: var(--deep);
+    color: var(--cream);
+    line-height: 1.6;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px 28px;
+    background: var(--leaf);
+    border-bottom: 2px solid #0a1a11;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.intro {
+    text-align: center;
+    color: var(--muted);
+    font-size: 18px;
+    margin: 34px 20px 10px;
+}
+
+.jungle {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 24px auto 40px;
+    padding: 0 24px;
+}
+
+.card {
+    background: var(--leaf);
+    border-radius: 14px;
+    padding: 22px 16px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--moss);
+}
+
+/* small bounce when an animal is played */
+.card.playing {
+    animation: pop 0.35s ease;
+    border-color: var(--lime);
+}
+
+@keyframes pop {
+    50% { transform: scale(1.08); }
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.card h3 {
+    margin: 12px 0 2px;
+    font-size: 20px;
+}
+
+.card .key {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.foot {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 20px;
+    border-top: 1px solid var(--leaf);
+}
+
+@media (max-width: 500px) {
+    .top { justify-content: center; }
+    .jungle { grid-template-columns: 1fr 1fr; }
+    .card img { width: 90px; height: 90px; }
+}
