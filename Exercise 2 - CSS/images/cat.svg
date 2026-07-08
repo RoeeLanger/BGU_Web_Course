@@ -1,0 +1,18 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="110" cy="115" r="95" fill="#3c1518"/>
+  <polygon points="55,70 70,20 100,55" fill="#e07856"/>
+  <polygon points="165,70 150,20 120,55" fill="#e07856"/>
+  <polygon points="62,62 72,35 88,58" fill="#28211b"/>
+  <polygon points="158,62 148,35 132,58" fill="#28211b"/>
+  <circle cx="85" cy="105" r="11" fill="#fce4d8"/>
+  <circle cx="135" cy="105" r="11" fill="#fce4d8"/>
+  <circle cx="85" cy="107" r="5" fill="#28211b"/>
+  <circle cx="135" cy="107" r="5" fill="#28211b"/>
+  <polygon points="103,128 117,128 110,138" fill="#e07856"/>
+  <path d="M110 138 Q95 150 82 140" stroke="#fce4d8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M110 138 Q125 150 138 140" stroke="#fce4d8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <line x1="30" y1="112" x2="72" y2="118" stroke="#fce4d8" stroke-width="2"/>
+  <line x1="30" y1="128" x2="72" y2="128" stroke="#fce4d8" stroke-width="2"/>
+  <line x1="190" y1="112" x2="148" y2="118" stroke="#fce4d8" stroke-width="2"/>
+  <line x1="190" y1="128" x2="148" y2="128" stroke="#fce4d8" stroke-width="2"/>
+</svg>
