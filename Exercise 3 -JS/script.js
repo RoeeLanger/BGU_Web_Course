@@ -1,5 +1,4 @@
-// The animals shown on the page. Each has a key (1-8) and a sound file
-// (from the Sounds/ folder) that we play when the animal is triggered.
+
 const animals = [
     { name: "Monkey",   img: "monkey.svg",   key: "1", sound: "8_bit_monkey_#1-1783498544546.mp3" },
     { name: "Lion",     img: "lion.svg",     key: "2", sound: "8_bit_lion_roar_#1-1783498507999.mp3" },
@@ -36,7 +35,7 @@ for (const animal of animals) {
     jungle.appendChild(card);
 }
 
-// One place to play a sound and flash the card, used by both click and keyboard.
+// play a sound and flash the card.
 function trigger(animal, card) {
     playSound(animal);
     card.classList.remove("playing");
@@ -45,7 +44,7 @@ function trigger(animal, card) {
     setTimeout(() => card.classList.remove("playing"), 1000);
 }
 
-// Number keys 1-8 play the matching animal.
+// keys 1-8 play the matching animal.
 document.addEventListener("keydown", (e) => {
     const animal = animals.find(a => a.key === e.key);
     if (animal) trigger(animal, animal.card);
